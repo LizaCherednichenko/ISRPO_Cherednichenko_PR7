@@ -20,78 +20,176 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
+        
         <GroupBox Header="Первые блюда" Grid.Row="1" Grid.Column="0">
             <StackPanel>
-                <Label Content="Борщ"/>
-                <Label Content="Куриный суп"/>
-                <Label Content="Том Ям"/>
+                <TextBlock x:Name="PB1" Text="Борщ" MouseDown="PB1_MouseDown">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
+                            <Image Source="image/борщ.jpg" Width="400" Height="400"/>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="PB2" Text="Куриный суп" MouseDown="PB2_MouseDown">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
+                            <Image Source="image/куриный суп.jpg" Width="400" Height="400"/>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="PB3" Text="Том Ям" MouseDown="PB3_MouseDown">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
+                            <Image Source="image/том ям.jpg" Width="400" Height="400"/>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
+                </TextBlock>
             </StackPanel>
         </GroupBox>
+        
         <GroupBox Header="" Grid.Row="1" Grid.Column="1">
             <StackPanel>
-                <Label Content="180"/>
-                <Label Content="180"/>
-                <Label Content="340"/>
+                <TextBlock x:Name="PB1c" Text="180"/>
+                <TextBlock x:Name="PB2c" Text="180"/>
+                <TextBlock x:Name="PB3c" Text="340"/>
             </StackPanel>
         </GroupBox>
 
         <GroupBox Header="Вторые блюда" Grid.Row="2" Grid.Column="0">
             <StackPanel>
-                <Label Content="Стейк-террияки"/>
-                <Label Content="Шашлычок"/>
-                <Label Content="Пельмени домашние"/>
+                <TextBlock x:Name="VB1" Text="Стейк-террияки" MouseDown="VB1_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/стейк-терияки.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="VB2" Text="Шашлычок" MouseDown="VB2_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/шашлычок.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="VB3" Text="Пельмени домашние" MouseDown="VB3_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/пельмени домашние.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
             </StackPanel>
         </GroupBox>
+        
         <GroupBox Header="" Grid.Row="2" Grid.Column="1">
             <StackPanel>
-                <Label Content="410"/>
-                <Label Content="290"/>
-                <Label Content="115"/>
+                <TextBlock x:Name="VB1c" Text="410"/>
+                <TextBlock x:Name="VB2c" Text="290"/>
+                <TextBlock x:Name="VB3c" Text="115"/>
             </StackPanel>
         </GroupBox>
 
         <GroupBox Header="Напитки" Grid.Row="3" Grid.Column="0">
             <StackPanel>
-                <Label Content="Чай"/>
-                <Label Content="Кофе Латте"/>
-                <Label Content="Колд-брю"/>
+                <TextBlock x:Name="N1" Text="Чай" MouseDown="N1_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/чай.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="N2" Text="Кофе Латте" MouseDown="N2_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/латте.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="N3" Text="Колд-брю" MouseDown="N3_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/колд-брю.jpeg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
             </StackPanel>
         </GroupBox>
+        
         <GroupBox Header="" Grid.Row="3" Grid.Column="1">
             <StackPanel>
-                <Label Content="40"/>
-                <Label Content="120"/>
-                <Label Content="200"/>
+                <TextBlock x:Name="N1c" Text="40"/>
+                <TextBlock x:Name="N2c" Text="120"/>
+                <TextBlock x:Name="N3c" Text="200"/>
             </StackPanel>
         </GroupBox>
 
         <GroupBox Header="Десерты" Grid.Row="4" Grid.Column="0">
             <StackPanel>
-                <Label Content="Тирамису"/>
-                <Label Content="Чизкейк Нью-Йорк"/>
-                <Label Content="Мороженое с сиропом"/>
+                <TextBlock x:Name="D1" Text="Тирамису" MouseDown="D1_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/тирамису.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="D2" Text="Чизкейк Нью-Йорк" MouseDown="D2_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/чизкейк.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock x:Name="D3" Text="Мороженое с сиропом" MouseDown="D3_MouseDown">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
+                            <Image Source="image/мороженое.jpg" Width="400" Height="400"/>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
+                </TextBlock>
             </StackPanel>
         </GroupBox>
+            
         <GroupBox Header="" Grid.Row="4" Grid.Column="1">
             <StackPanel>
-                <Label Content="280"/>
-                <Label Content="200"/>
-                <Label Content="100"/>
+                <TextBlock x:Name="D1c" Text="280"/>
+                <TextBlock x:Name="D2c" Text="200"/>
+                <TextBlock x:Name="D3c" Text="100"/>
             </StackPanel>
         </GroupBox>
 
         <GroupBox Header="Закуски" Grid.Row="5" Grid.Column="0">
             <StackPanel>
-                <Label Content="Кальмары в кляре"/>
-                <Label Content="Жульен охотничий"/>
-                <Label Content="Карпаччо из говядины"/>
+                <TextBlock x:Name="Z1" Text="Кальмары в кляре" MouseDown="Z1_MouseDown">
+                <TextBlock.ToolTip>
+                    <ToolTip>
+                            <Image Source="image/кальмары.jpg" Width="400" Height="400"/>
+                    </ToolTip>
+                </TextBlock.ToolTip>
+                </TextBlock>
+                
+                <TextBlock x:Name="Z2" Text="Жульен охотничий" MouseDown="Z2_MouseDown">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
+                            <Image Source="image/жульен.jpg" Width="400" Height="400"/>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
+                    </TextBlock>
+                
+                    <TextBlock x:Name="Z3" Text="Карпаччо из говядины" MouseDown="Z3_MouseDown">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
+                            <Image Source="image/карпаччо.jpg" Width="400" Height="400"/>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
+                </TextBlock>
             </StackPanel>
         </GroupBox>
+        
         <GroupBox Header="" Grid.Row="5" Grid.Column="1">
             <StackPanel>
-                <Label Content="215"/>
-                <Label Content="150"/>
-                <Label Content="550"/>
+                <TextBlock x:Name="Z1c" Text="215"/>
+                <TextBlock x:Name="Z2c" Text="150"/>
+                <TextBlock x:Name="Z3c" Text="550"/>
             </StackPanel>
         </GroupBox>
 
