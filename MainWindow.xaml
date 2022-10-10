@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR7"
         mc:Ignorable="d"
-        Title="Меню" Height="450" Width="800">
+        Title="Меню" Height="641.517" Width="465.179">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="374*"/>
+            <ColumnDefinition Width="83*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -19,8 +19,81 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        
-        
+
+        <GroupBox Header="Первые блюда" Grid.Row="1" Grid.Column="0">
+            <StackPanel>
+                <Label Content="Борщ"/>
+                <Label Content="Куриный суп"/>
+                <Label Content="Том Ям"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="" Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <Label Content="180"/>
+                <Label Content="180"/>
+                <Label Content="340"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Вторые блюда" Grid.Row="2" Grid.Column="0">
+            <StackPanel>
+                <Label Content="Стейк-террияки"/>
+                <Label Content="Шашлычок"/>
+                <Label Content="Пельмени домашние"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="" Grid.Row="2" Grid.Column="1">
+            <StackPanel>
+                <Label Content="410"/>
+                <Label Content="290"/>
+                <Label Content="115"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Напитки" Grid.Row="3" Grid.Column="0">
+            <StackPanel>
+                <Label Content="Чай"/>
+                <Label Content="Кофе Латте"/>
+                <Label Content="Колд-брю"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="" Grid.Row="3" Grid.Column="1">
+            <StackPanel>
+                <Label Content="40"/>
+                <Label Content="120"/>
+                <Label Content="200"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Десерты" Grid.Row="4" Grid.Column="0">
+            <StackPanel>
+                <Label Content="Тирамису"/>
+                <Label Content="Чизкейк Нью-Йорк"/>
+                <Label Content="Мороженое с сиропом"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="" Grid.Row="4" Grid.Column="1">
+            <StackPanel>
+                <Label Content="280"/>
+                <Label Content="200"/>
+                <Label Content="100"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Закуски" Grid.Row="5" Grid.Column="0">
+            <StackPanel>
+                <Label Content="Кальмары в кляре"/>
+                <Label Content="Жульен охотничий"/>
+                <Label Content="Карпаччо из говядины"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="" Grid.Row="5" Grid.Column="1">
+            <StackPanel>
+                <Label Content="215"/>
+                <Label Content="150"/>
+                <Label Content="550"/>
+            </StackPanel>
+        </GroupBox>
+
     </Grid>
 </Window>
