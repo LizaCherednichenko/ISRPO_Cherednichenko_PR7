@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR7"
         mc:Ignorable="d"
-        Title="Меню" Height="649.517" Width="465.179">
+        Title="Меню" Height="649.517" Width="495.179">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="146*"/>
-            <ColumnDefinition Width="38*"/>
-            <ColumnDefinition Width="61*"/>
-            <ColumnDefinition Width="212*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="182*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="102*"/>
@@ -26,6 +26,8 @@
                 </LinearGradientBrush>
             </Canvas.Background>
         </Canvas>
+
+        <Label Content="lovEat" Grid.Row="0" Grid.ColumnSpan="4" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Vivaldi"/>
 
 
         <GroupBox Header="Первые блюда" Grid.Row="1" Grid.Column="0" Margin="0,0,0,407" FontWeight="Bold">
@@ -54,11 +56,11 @@
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Header="" Grid.Row="1" Grid.Column="1" Margin="0,0,0,407">
+        <GroupBox Header="Цена (р)" Grid.Row="1" Grid.Column="1" Margin="0,0,0,407" FontWeight="Bold">
             <StackPanel>
-                <TextBlock x:Name="PB1c" Text="180" Height="22"/>
-                <TextBlock x:Name="PB2c" Text="180" Height="22"/>
-                <TextBlock x:Name="PB3c" Text="340" Height="22"/>
+                <TextBlock x:Name="PB1c" Text="180" Height="22" FontWeight="Normal"/>
+                <TextBlock x:Name="PB2c" Text="180" Height="22" FontWeight="Normal"/>
+                <TextBlock x:Name="PB3c" Text="340" Height="22" FontWeight="Normal"/>
             </StackPanel>
         </GroupBox>
 
@@ -202,32 +204,33 @@
 
         <Button x:Name="butt1" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,11,0,478" Background="#FFDDDDDD" Click="butt1_Click"/>
         <Button x:Name="butt2" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,35,0,454" Click="butt2_Click"/>
-        <Button x:Name="butt3" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,58,0,431"/>
-        <Button x:Name="butt4" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,115,0,374"/>
-        <Button x:Name="butt5" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,138,0,351"/>
-        <Button x:Name="butt6" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,161,0,328"/>
-        <Button x:Name="butt7" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,219,0,270"/>
-        <Button x:Name="butt8" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,241,0,248"/>
-        <Button x:Name="butt9" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,264,0,225"/>
-        <Button x:Name="butt10" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,320,0,169"/>
-        <Button x:Name="butt11" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,343,0,146"/>
-        <Button x:Name="butt12" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,366,0,123"/>
-        <Button x:Name="butt13" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,421,0,68"/>
-        <Button x:Name="butt14" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,444,0,45"/>
-        <Button x:Name="butt15" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,466,0,23"/>
+        <Button x:Name="butt3" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,58,0,431" Click="butt3_Click"/>
+        <Button x:Name="butt4" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,115,0,374" Click="butt4_Click"/>
+        <Button x:Name="butt5" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,138,0,351" Click="butt5_Click"/>
+        <Button x:Name="butt6" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,161,0,328" Click="butt6_Click"/>
+        <Button x:Name="butt7" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,219,0,270" Click="butt7_Click"/>
+        <Button x:Name="butt8" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,241,0,248" Click="butt8_Click"/>
+        <Button x:Name="butt9" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,264,0,225" Click="butt9_Click"/>
+        <Button x:Name="butt10" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,320,0,169" Click="butt10_Click"/>
+        <Button x:Name="butt11" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,343,0,146" Click="butt11_Click"/>
+        <Button x:Name="butt12" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,366,0,123" Click="butt12_Click"/>
+        <Button x:Name="butt13" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,421,0,68" Click="butt13_Click"/>
+        <Button x:Name="butt14" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,444,0,45" Click="butt14_Click"/>
+        <Button x:Name="butt15" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,466,0,23" Click="butt15_Click"/>
 
-        <Label Content="Заказ:" Grid.Row="1" Grid.Column="3" FontSize="18" FontWeight="Bold" Margin="78,0,0,474"/>
+        <Label Content="Заказ:" Grid.Row="1" Grid.Column="3" FontSize="18" FontWeight="Bold" Margin="61,0,0,474"/>
         <TextBlock x:Name="zakaz" Grid.Row="1" Grid.Column="3" Margin="10,31,10,68">
             <TextBlock.Background>
                 <SolidColorBrush Color="White" Opacity="0.3"/>
             </TextBlock.Background>
         </TextBlock>
-        <Label Content="Итого:" Grid.Row="1" Grid.Column="3" Margin="10,463,137,11" FontSize="16"/>
-        <TextBlock x:Name="itog" Grid.Row="1" Grid.Column="3" FontSize="16" FontWeight="Bold" Margin="75,463,10,11">
+        <Label Content="Итого:" Grid.Row="1" Grid.Column="3" Margin="10,463,112,11" FontSize="16"/>
+        <TextBlock x:Name="itog" Grid.Row="1" Grid.Column="3" FontSize="16" FontWeight="Bold" Margin="75,463,31,11">
             <TextBlock.Background>
                 <SolidColorBrush Color="White" Opacity="0.3"/>
             </TextBlock.Background>
         </TextBlock>
+        <Label Content="Р" Grid.Row="1" Grid.Column="3" Margin="168,465,0,9" FontSize="16"/>
 
     </Grid>
 </Window>
