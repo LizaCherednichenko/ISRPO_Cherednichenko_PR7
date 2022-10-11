@@ -25,6 +25,9 @@ namespace ISRPO_Cherednichenko_PR7
             InitializeComponent();
         }
 
+        int a = 0;
+        int d;
+
         private void PB1_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("состав", "Борщ");
@@ -98,6 +101,22 @@ namespace ISRPO_Cherednichenko_PR7
         private void Z3_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("состав", "Карпаччо из говядины");
+        }
+
+        private void butt1_Click(object sender, RoutedEventArgs e)
+        {
+            a = a + 1;
+            zakaz.Text = zakaz.Text += a +" "+ PB1.Text +" "+ PB1c.Text + Environment.NewLine;
+
+            d = d + 180;
+            itog.Text = d.ToString();
+
+        }
+
+        private void butt2_Click(object sender, RoutedEventArgs e)
+        {
+            a = a + 1;
+            zakaz.Text = zakaz.Text += a +" "+ PB2.Text +" "+ PB2c.Text + Environment.NewLine;
         }
     }
 }

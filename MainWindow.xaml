@@ -5,39 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR7"
         mc:Ignorable="d"
-        Title="Меню" Height="641.517" Width="465.179">
+        Title="Меню" Height="649.517" Width="465.179">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="374*"/>
-            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="146*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="212*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="102*"/>
+            <RowDefinition Height="509*"/>
         </Grid.RowDefinitions>
 
-        
-        <GroupBox Header="Первые блюда" Grid.Row="1" Grid.Column="0">
+        <Canvas Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="2">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFAA5A8D" Offset="0"/>
+                    <GradientStop Color="#FF83CBB4" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+        </Canvas>
+
+
+        <GroupBox Header="Первые блюда" Grid.Row="1" Grid.Column="0" Margin="0,0,0,407" FontWeight="Bold">
             <StackPanel>
-                <TextBlock x:Name="PB1" Text="Борщ" MouseDown="PB1_MouseDown">
+                <TextBlock x:Name="PB1" Text="Борщ" MouseDown="PB1_MouseDown" Height="22" FontWeight="Normal">
                     <TextBlock.ToolTip>
                         <ToolTip>
                             <Image Source="image/борщ.jpg" Width="400" Height="400"/>
                         </ToolTip>
                     </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="PB2" Text="Куриный суп" MouseDown="PB2_MouseDown">
+                <TextBlock x:Name="PB2" Text="Куриный суп" MouseDown="PB2_MouseDown" Height="22" FontWeight="Normal">
                     <TextBlock.ToolTip>
                         <ToolTip>
                             <Image Source="image/куриный суп.jpg" Width="400" Height="400"/>
                         </ToolTip>
                     </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="PB3" Text="Том Ям" MouseDown="PB3_MouseDown">
+                <TextBlock x:Name="PB3" Text="Том Ям" MouseDown="PB3_MouseDown" Height="22" FontWeight="Normal">
                     <TextBlock.ToolTip>
                         <ToolTip>
                             <Image Source="image/том ям.jpg" Width="400" Height="400"/>
@@ -46,100 +53,100 @@
                 </TextBlock>
             </StackPanel>
         </GroupBox>
-        
-        <GroupBox Header="" Grid.Row="1" Grid.Column="1">
+
+        <GroupBox Header="" Grid.Row="1" Grid.Column="1" Margin="0,0,0,407">
             <StackPanel>
-                <TextBlock x:Name="PB1c" Text="180"/>
-                <TextBlock x:Name="PB2c" Text="180"/>
-                <TextBlock x:Name="PB3c" Text="340"/>
+                <TextBlock x:Name="PB1c" Text="180" Height="22"/>
+                <TextBlock x:Name="PB2c" Text="180" Height="22"/>
+                <TextBlock x:Name="PB3c" Text="340" Height="22"/>
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Header="Вторые блюда" Grid.Row="2" Grid.Column="0">
+        <GroupBox Header="Вторые блюда" Grid.Row="1" Grid.Column="0" Margin="0,102,0,305" FontWeight="Bold">
             <StackPanel>
-                <TextBlock x:Name="VB1" Text="Стейк-террияки" MouseDown="VB1_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="VB1" Text="Стейк-террияки" MouseDown="VB1_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/стейк-терияки.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="VB2" Text="Шашлычок" MouseDown="VB2_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="VB2" Text="Шашлычок" MouseDown="VB2_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/шашлычок.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="VB3" Text="Пельмени домашние" MouseDown="VB3_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="VB3" Text="Пельмени домашние" MouseDown="VB3_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/пельмени домашние.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
             </StackPanel>
         </GroupBox>
-        
-        <GroupBox Header="" Grid.Row="2" Grid.Column="1">
+
+        <GroupBox Header="" Grid.Row="1" Grid.Column="1" Margin="0,102,0,305">
             <StackPanel>
-                <TextBlock x:Name="VB1c" Text="410"/>
-                <TextBlock x:Name="VB2c" Text="290"/>
-                <TextBlock x:Name="VB3c" Text="115"/>
+                <TextBlock x:Name="VB1c" Text="410" Height="22"/>
+                <TextBlock x:Name="VB2c" Text="290" Height="22"/>
+                <TextBlock x:Name="VB3c" Text="115" Height="22"/>
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Header="Напитки" Grid.Row="3" Grid.Column="0">
+        <GroupBox Header="Напитки" Grid.Row="1" Grid.Column="0" Margin="0,204,0,203" FontWeight="Bold">
             <StackPanel>
-                <TextBlock x:Name="N1" Text="Чай" MouseDown="N1_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="N1" Text="Чай" MouseDown="N1_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/чай.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="N2" Text="Кофе Латте" MouseDown="N2_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="N2" Text="Кофе Латте" MouseDown="N2_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/латте.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="N3" Text="Колд-брю" MouseDown="N3_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="N3" Text="Колд-брю" MouseDown="N3_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/колд-брю.jpeg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-            </StackPanel>
-        </GroupBox>
-        
-        <GroupBox Header="" Grid.Row="3" Grid.Column="1">
-            <StackPanel>
-                <TextBlock x:Name="N1c" Text="40"/>
-                <TextBlock x:Name="N2c" Text="120"/>
-                <TextBlock x:Name="N3c" Text="200"/>
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Header="Десерты" Grid.Row="4" Grid.Column="0">
+        <GroupBox Header="" Grid.Row="1" Grid.Column="1" Margin="0,204,0,203">
             <StackPanel>
-                <TextBlock x:Name="D1" Text="Тирамису" MouseDown="D1_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="N1c" Text="40" Height="22"/>
+                <TextBlock x:Name="N2c" Text="120" Height="22"/>
+                <TextBlock x:Name="N3c" Text="200" Height="22"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Десерты" Grid.Row="1" Grid.Column="0" Margin="0,306,0,101" FontWeight="Bold">
+            <StackPanel>
+                <TextBlock x:Name="D1" Text="Тирамису" MouseDown="D1_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/тирамису.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="D2" Text="Чизкейк Нью-Йорк" MouseDown="D2_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="D2" Text="Чизкейк Нью-Йорк" MouseDown="D2_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/чизкейк.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock x:Name="D3" Text="Мороженое с сиропом" MouseDown="D3_MouseDown">
+                <TextBlock x:Name="D3" Text="Мороженое с сиропом" MouseDown="D3_MouseDown" Height="22" FontWeight="Normal">
                     <TextBlock.ToolTip>
                         <ToolTip>
                             <Image Source="image/мороженое.jpg" Width="400" Height="400"/>
@@ -148,34 +155,34 @@
                 </TextBlock>
             </StackPanel>
         </GroupBox>
-            
-        <GroupBox Header="" Grid.Row="4" Grid.Column="1">
+
+        <GroupBox Header="" Grid.Row="1" Grid.Column="1" Margin="0,306,0,101">
             <StackPanel>
-                <TextBlock x:Name="D1c" Text="280"/>
-                <TextBlock x:Name="D2c" Text="200"/>
-                <TextBlock x:Name="D3c" Text="100"/>
+                <TextBlock x:Name="D1c" Text="280" Height="22"/>
+                <TextBlock x:Name="D2c" Text="200" Height="22"/>
+                <TextBlock x:Name="D3c" Text="100" Height="22"/>
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Header="Закуски" Grid.Row="5" Grid.Column="0">
+        <GroupBox Header="Закуски" Grid.Row="1" Grid.Column="0" Margin="0,408,0,0" FontWeight="Bold">
             <StackPanel>
-                <TextBlock x:Name="Z1" Text="Кальмары в кляре" MouseDown="Z1_MouseDown">
-                <TextBlock.ToolTip>
-                    <ToolTip>
+                <TextBlock x:Name="Z1" Text="Кальмары в кляре" MouseDown="Z1_MouseDown" Height="22" FontWeight="Normal">
+                    <TextBlock.ToolTip>
+                        <ToolTip>
                             <Image Source="image/кальмары.jpg" Width="400" Height="400"/>
-                    </ToolTip>
-                </TextBlock.ToolTip>
+                        </ToolTip>
+                    </TextBlock.ToolTip>
                 </TextBlock>
-                
-                <TextBlock x:Name="Z2" Text="Жульен охотничий" MouseDown="Z2_MouseDown">
+
+                <TextBlock x:Name="Z2" Text="Жульен охотничий" MouseDown="Z2_MouseDown" Height="22" FontWeight="Normal">
                     <TextBlock.ToolTip>
                         <ToolTip>
                             <Image Source="image/жульен.jpg" Width="400" Height="400"/>
                         </ToolTip>
                     </TextBlock.ToolTip>
-                    </TextBlock>
-                
-                    <TextBlock x:Name="Z3" Text="Карпаччо из говядины" MouseDown="Z3_MouseDown">
+                </TextBlock>
+
+                <TextBlock x:Name="Z3" Text="Карпаччо из говядины" MouseDown="Z3_MouseDown" Height="22" FontWeight="Normal">
                     <TextBlock.ToolTip>
                         <ToolTip>
                             <Image Source="image/карпаччо.jpg" Width="400" Height="400"/>
@@ -184,14 +191,43 @@
                 </TextBlock>
             </StackPanel>
         </GroupBox>
-        
-        <GroupBox Header="" Grid.Row="5" Grid.Column="1">
+
+        <GroupBox Header="" Grid.Row="1" Grid.Column="1" Margin="0,408,0,0">
             <StackPanel>
-                <TextBlock x:Name="Z1c" Text="215"/>
-                <TextBlock x:Name="Z2c" Text="150"/>
-                <TextBlock x:Name="Z3c" Text="550"/>
+                <TextBlock x:Name="Z1c" Text="215" Height="22"/>
+                <TextBlock x:Name="Z2c" Text="150" Height="22"/>
+                <TextBlock x:Name="Z3c" Text="550" Height="22"/>
             </StackPanel>
         </GroupBox>
+
+        <Button x:Name="butt1" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,11,0,478" Background="#FFDDDDDD" Click="butt1_Click"/>
+        <Button x:Name="butt2" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,35,0,454" Click="butt2_Click"/>
+        <Button x:Name="butt3" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,58,0,431"/>
+        <Button x:Name="butt4" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,115,0,374"/>
+        <Button x:Name="butt5" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,138,0,351"/>
+        <Button x:Name="butt6" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,161,0,328"/>
+        <Button x:Name="butt7" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,219,0,270"/>
+        <Button x:Name="butt8" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,241,0,248"/>
+        <Button x:Name="butt9" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,264,0,225"/>
+        <Button x:Name="butt10" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,320,0,169"/>
+        <Button x:Name="butt11" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,343,0,146"/>
+        <Button x:Name="butt12" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,366,0,123"/>
+        <Button x:Name="butt13" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,421,0,68"/>
+        <Button x:Name="butt14" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,444,0,45"/>
+        <Button x:Name="butt15" Content="Выбрать" Grid.Column="2" Grid.Row="1" RenderTransformOrigin="0.739,-7.409" Margin="0,466,0,23"/>
+
+        <Label Content="Заказ:" Grid.Row="1" Grid.Column="3" FontSize="18" FontWeight="Bold" Margin="78,0,0,474"/>
+        <TextBlock x:Name="zakaz" Grid.Row="1" Grid.Column="3" Margin="10,31,10,68">
+            <TextBlock.Background>
+                <SolidColorBrush Color="White" Opacity="0.3"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <Label Content="Итого:" Grid.Row="1" Grid.Column="3" Margin="10,463,137,11" FontSize="16"/>
+        <TextBlock x:Name="itog" Grid.Row="1" Grid.Column="3" FontSize="16" FontWeight="Bold" Margin="75,463,10,11">
+            <TextBlock.Background>
+                <SolidColorBrush Color="White" Opacity="0.3"/>
+            </TextBlock.Background>
+        </TextBlock>
 
     </Grid>
 </Window>
