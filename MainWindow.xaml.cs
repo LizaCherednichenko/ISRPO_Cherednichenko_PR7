@@ -30,77 +30,77 @@ namespace ISRPO_Cherednichenko_PR7
 
         private void PB1_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Борщ");
+            MessageBox.Show("свёкла, \nморковь, \nкапуста, \nкартошка, \nлук, \nговядина, \nчеснок", "борщ");
         }
 
         private void PB2_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Куриный суп");
+            MessageBox.Show("куриные окорочка, \nкартофель, \nморковь, \nлук, \nвермишель,", "Куриный суп");
         }
 
         private void PB3_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Том Ям");
+            MessageBox.Show("королевские креветки, \nкинза, \nкокосовое молоко, \nперец чили, \nпомидоры черри, \nшампиньоны, \nлайм, \nчеснок, \nимбирь, \nоливковое масло, \nрыбный соус, \nпаста Том Ям", "Том Ям");
         }
 
         private void VB1_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Стейк-террияки");
+            MessageBox.Show("стейк, \nсоус терияки, \nброкколи, \nболгарский перец, \nзеленый лук", "Стейк-террияки");
         }
 
         private void VB2_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Шашлычок");
+            MessageBox.Show("свинина, \nпомидоры, \nлайм, \nкреветки, \nболгарский перец, \nкартофель", "Шашлычок");
         }
 
         private void VB3_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Пельмени домашние");
+            MessageBox.Show("пресное тесто, \nсвинина, \nговядина, \nлук", "Пельмени домашние");
         }
 
         private void N1_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Чай");
+            MessageBox.Show("черный чай, \nлимон (по желанию), \nсахар (по желанию)", "Чай");
         }
 
         private void N2_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Кофе Латте");
+            MessageBox.Show("эспрессо, \nмолоко, \nпена", "Кофе Латте");
         }
 
         private void N3_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Колд-брю");
+            MessageBox.Show("кофе, \nмолоко, \nлёд", "Колд-брю");
         }
 
         private void D1_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Тирамису");
+            MessageBox.Show("маскарпоне, \nяйцо, \nсахарная пудра, \nгорький шоколад, \nкофе эспрессо, \nмарсала, \nпеченье савоярди", "Тирамису");
         }
 
         private void D2_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Чизкейк Нью-Йорк");
+            MessageBox.Show("крекер, \nсливочное масло, \nсливочный сыр, \nяйца, \nсливки, \nцедра лимона, \nсахар, \nсахар ванильный", "Чизкейк Нью-Йорк");
         }
 
         private void D3_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Мороженое с сиропом");
+            MessageBox.Show("ванильное мороженое, \nсироп на выбор", "Мороженое с сиропом");
         }
 
         private void Z1_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Кальмары в кляре");
+            MessageBox.Show("кальмары, \nкрахмал, \nмука, \nяйцо, \nмолоко, \nчерный перец", "Кальмары в кляре");
         }
 
         private void Z2_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Жульен охотничий");
+            MessageBox.Show("масло сливочное, \nмолоко, \nлук, \nгрибы, \nлимон, \nмука пшеничная, \nтвердый сыр", "Жульен охотничий");
         }
 
         private void Z3_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("состав", "Карпаччо из говядины");
+            MessageBox.Show("вырезка говяжья, \nуксус бальзамический, \nруккола", "Карпаччо из говядины");
         }
 
         private void butt1_Click(object sender, RoutedEventArgs e)
